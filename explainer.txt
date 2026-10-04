@@ -1,0 +1,37 @@
+A little about Haskell:
+
+It's statically typed, so that means that datatypes are determined during compile, and wont change. 
+You should also define data types in general. Idk the name of this but variables are also unchangable. 
+So if a = 5, it cant later be a = 7.
+
+The structure of a haskell funciton is: funciton name, parameter = argument. Example:
+
+doubleMe x = x+x
+
+We use space to seperate the funciton name and parameter.
+
+In haskell functions are either infix or prefix. What does this mean? 
+A prefix function would be a function likemax, that you declare and thereafter show the arguments. 
+Of course the arguments should be seperated by spacing.
+
+An infix function could also be a prefix function. The only way they are different is the way that they are called.
+Fx the function div divides two numbers (duh!). div 92 10 returns a 9, but it can be difficult to read the intention here.
+
+Therefore we use infix. The way to do this is as following: 92 ´div´ 10. Se how it's kinda like putting the 
+division symbol in between them? remember to use those weird skewed citation marks. 
+(They are next to plus on the keyboard, you hold shit and press it. Remember) 
+
+Also important: YOU CANNOT HAVE A FUNCTION NAME START WITH A CAPITAL LETTER THE COMPILER WILL SHIT ITSELF.
+
+=============================================================================================================
+
+Precedence in haskell tends to follow, normal mathematical prcedence. 
+The one thing that kinda sticks out is how spacing is handled when combining it with operatiors. 
+In general thing of everything seperated by spacing (before or after a mathematical operator) to be enclosed
+in parenthesis. Example:
+
+succ 9 + max 5 4 + 1
+
+is the same as
+
+(succ 9) + (max 5 4) + 1
