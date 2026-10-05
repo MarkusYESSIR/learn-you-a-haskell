@@ -35,3 +35,10 @@ succ 9 + max 5 4 + 1
 is the same as
 
 (succ 9) + (max 5 4) + 1
+
+=============================================================================================================
+
+Since haskell is lazy compiled the order the funcitons are written in doesn't matter. 
+Also it's good practice to define smaller obvius functions and then use them as arguments in bigger functions 
+instead of just writin out a really fkn long calculation in a large funciton. This is done, since if we
+then later want to change something we only need to change the small function and not anything larger. 
