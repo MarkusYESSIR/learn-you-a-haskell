@@ -28,4 +28,10 @@ divNumber x y = div x y
 
 divInfixNumber x y = x `div` y
 
- 
+-- mod: This is the modulo operator. It works exclusively with whole numbers. This means that when dividing it gived us remaining whole numbers. 
+-- Is also often used for checking if something is even or odd by seing if mod 2 == 0. 
+-- Like div, this could often be used in infix form and if used in prefix it takes first input and mods with second input.
+
+modNumberInfix x y = x `mod` y
+modNumberPrefix x y = mod x y
+
