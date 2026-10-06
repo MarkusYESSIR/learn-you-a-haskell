@@ -17,7 +17,7 @@ Of course the arguments should be seperated by spacing.
 An infix function could also be a prefix function. The only way they are different is the way that they are called.
 Fx the function div divides two numbers (duh!). div 92 10 returns a 9, but it can be difficult to read the intention here.
 
-Therefore we use infix. The way to do this is as following: 92 ´div´ 10. Se how it's kinda like putting the 
+Therefore we use infix. The way to do this is as following: 92 `div` 10. Se how it's kinda like putting the 
 division symbol in between them? remember to use those weird skewed citation marks. 
 (They are next to plus on the keyboard, you hold shit and press it. Remember) 
 
