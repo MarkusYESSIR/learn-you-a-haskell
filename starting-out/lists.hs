@@ -25,11 +25,11 @@ firstList = [1, 2, 3, 4, 5, 6]
 
 --'A':",B,C,D,E"
 
--- Remember a list is a string of Char.
+-- Remember a string is a list of Char.
 
 --1:2:3:[]
  
--- Above is actually how a list is formed. Every element concantenated to an empty list. Try it in GHCI
+-- Above is actually how a string is formed. Every element concantenated to an empty list. Try it in GHCI
 -- Try these in the GHCI!
 -- ==========================================================================================================================
 -- A list can be made of lists. Example:
