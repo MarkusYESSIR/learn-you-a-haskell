@@ -1,0 +1,2 @@
+-- Remember set theory from SS? Yeah that fucked shit? Well Haskell natively supports it for defining
+-- lists! 
