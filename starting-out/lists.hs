@@ -119,13 +119,14 @@ secondList = [[1,2,3],[4,5,6],[7,8,9]]
 -- replicate 3 10 
 -- [10,10,10]
 
+removeUpperCase :: [Char] -> [Char]
+removeUpperCase x = [ c | c <- x, c `elem` ['a'..'z']]
+
 -- ===================================================================================================
 
 -- List ranges:
 
 -- what if we want a massive list but don't want to type it all out? Use ranges:
 -- [1..20] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
--- We only use two dots. Also works for Char in a list. It's kinda common sense, don't write all of
--- them out rn
-
+-- We only use two dots. Also works for Char in a list. It's kinda common sense, don't write all of them out rn
 
