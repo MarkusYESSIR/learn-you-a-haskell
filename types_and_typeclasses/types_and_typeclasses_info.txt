@@ -1,1 +1,48 @@
+In Haskell type declaration is real important. We do it above the actual function delceration. Typically as following:
 
+removeNonUppercase :: [Char] -> [Char]
+removeNonUppercase x = [ n | n <- x, n `elem` ['A'..'Z']]
+
+:: is to be read as: is of type. So removeNonUppercase is of type [Char] -> [Char]
+
+When Declaring types, it must always start capitalized. 
+The different parameters of a function are seperated via ->m and there's no special distinction between the parameters and the return type. 
+
+Example:
+addThree :: Int -> Int -> Int -> Int
+addThree x y z = x + y + z
+
+The last declared -> signals the return type. 
+
+==================================================================================
+OVERVIEW OF DIFFERENT COMMON TYPES
+==================================================================================
+
+Int: Stands for integer
+
+Integer: stands for integer but it's not bound, so it can be sed to represent really big numbers. 
+
+Float: Stands for floating point number
+
+Double: Also a floating ppoint number but it's not bound, so it can represent more fractional nubḿbers. 
+
+Bool: is for Booleans. 
+
+Char: is for Characters, so like 'a', or 'b'
+
+[Char]: is for strings like "Hello". A string is a list for Char, hence the brackets 
+
+[]: An empty list
+
+(): and empty tuple. 
+
+Little extra. You can declare what the datatype of a lists elements are by putting the tyoe within the declared list, such as [Int]. The same goes for Tuples, so (Int) or (Char) or (Int, Char)
+==================================================================================
+TYPE VARIABLES
+==================================================================================
+
+
+
+==================================================================================
+TYPE CLASSES
+==================================================================================
