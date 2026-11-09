@@ -6,7 +6,7 @@ removeNonUppercase x = [ n | n <- x, n `elem` ['A'..'Z']]
 :: is to be read as: is of type. So removeNonUppercase is of type [Char] -> [Char]
 
 When Declaring types, it must always start capitalized. 
-The different parameters of a function are seperated via ->m and there's no special distinction between the parameters and the return type. 
+The different parameters of a function are seperated via -> and there's no special distinction between the parameters and the return type. 
 
 Example:
 addThree :: Int -> Int -> Int -> Int
@@ -18,9 +18,9 @@ The last declared -> signals the return type.
 OVERVIEW OF DIFFERENT COMMON TYPES
 ==================================================================================
 
-Int: Stands for integer
+Int: Stands for integer (max is 2147483647 and the minimum is -2147483648.)
 
-Integer: stands for integer but it's not bound, so it can be sed to represent really big numbers. 
+Integer: stands for integer but it's not bound, so it can be used to represent really big numbers. 
 
 Float: Stands for floating point number
 
@@ -32,17 +32,24 @@ Char: is for Characters, so like 'a', or 'b'
 
 [Char]: is for strings like "Hello". A string is a list for Char, hence the brackets 
 
+String: is kinda the same as [Char]
+
 []: An empty list
 
 (): and empty tuple. 
 
-Little extra. You can declare what the datatype of a lists elements are by putting the tyoe within the declared list, such as [Int]. The same goes for Tuples, so (Int) or (Char) or (Int, Char)
+Little extra. You can declare what the datatype of a lists elements are by putting the type within the declared list, such as [Int]. 
+The same goes for Tuples, so (Int) or (Char) or (Int, Char)
 ==================================================================================
 TYPE VARIABLES
 ==================================================================================
+[a] is a type variable. or a is. it doenst have a specifik type, just that it is a member of a list. This means that a can be of any type. 
+Functions that have type variables are called polymorphic functions. 
+The function fst takes the first entry in a tuple. so fst (a,b) -> a. Its type is -> fst :: (a,b) -> a.
 
-
+All in All a type variable is a variable that can represent any type, doesn't have tu be defined.
 
 ==================================================================================
 TYPE CLASSES
 ==================================================================================
+

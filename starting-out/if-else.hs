@@ -21,7 +21,7 @@ doubleLargerNumber x =
   then x*2
   else x
 
--- See how you can also split the condition up? Here if is indented,s o it's further ahead than the function name, and then and else is even further
+-- See how you can also split the condition up? Here if is indented, so it's further ahead than the function name, and then and else is even further
 -- ahead than if. 
 
--- Fun fact id-statements are an expression and must therefore always return a value :)
+-- Fun fact if-statements are an expression and must therefore always return a value :)
